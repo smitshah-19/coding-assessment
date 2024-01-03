@@ -1,4 +1,5 @@
 #import dependencies
+
 import openai  
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -12,8 +13,8 @@ import os
 
 load_dotenv()
 
- # Set your OpenAI API key
-openai.api_key = os.getenv("API_KEY")
+# Set your OpenAI API key
+openai.api_key = os.getenv("API_KEY") #The API_KEY can be extracted/fetched from .env file (here in this case I have created a .env_sample)
 
 def fetch_papers():
     """Fetches papers from the arXiv API and returns them as a list of strings."""
